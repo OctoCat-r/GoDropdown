@@ -11,7 +11,7 @@ Installation
    npm install
 
 3. Create a .env file in the project root:
-   GITHUB_TOKEN=<your-github-token>
+   GITHUB_TOKEN = Your Token
 
 4. Start the server:
    nodemon index.js
