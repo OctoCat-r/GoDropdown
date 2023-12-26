@@ -8,12 +8,13 @@ Installation
    git clone https://github.com/OctoCat-r/GoDropdown.git
 
 2. cd GoDropdown
-   npm install
 
-3. Create a .env file in the project root:
+3. npm install
+
+4. Create a .env file in the project root:
    GITHUB_TOKEN = Your Token
 
-4. Start the server:
+5. Start the server:
    nodemon index.js
 
 
