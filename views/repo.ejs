@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Repositories</title>
+</head>
+<body>
+  <h1>GitHub Repositories</h1>
+
+
+  <form action="/repositories" method="get">
+    <label for="username">GitHub Username:</label>
+    <input type="text" id="username" name="username" required>
+    <button type="submit">Fetch Repositories</button>
+  </form>
+
+  
+  <ul>
+    <% if (repositories && repositories.length > 0) { %>
+      <% repositories.forEach(repo => { %>
+        <li>
+          <h2><%= repo.name %></h2>
+          <p><%= repo.description %></p>
+          <p>Language: <%= repo.primaryLanguage ? repo.primaryLanguage.name : 'N/A' %></p>
+          <p>Stars: <%= repo.stargazerCount %></p>
+        </li>
+      <% }); %>
+    <% } else { %>
+      <li>No repositories found.</li>
+    <% } %>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/* public/styles/style.css */
+body {
+  font-family: "Arial", sans-serif;
+}
+
+#graph-container {
+  width: 800px;
+  margin: 20px auto;
+}
+/* #heatmap {
+  background-color: black;
+} */

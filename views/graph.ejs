@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Contribution Graph</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="/scripts/graph.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>GitHub Contribution Graph</h1>
+    <form id="githubForm" action="/contribution-graph" method="get">
+      <label for="username">GitHub Username:</label>
+      <input type="text" id="username" name="username" required />
+      <button type="submit">Fetch Contribution Graph</button>
+    </form>
+    <div id="heatmap"></div>
+  </body>
+</html>
